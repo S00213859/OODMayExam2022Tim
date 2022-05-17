@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace OODMayExam2022
 {
@@ -13,6 +14,7 @@ namespace OODMayExam2022
         //Properties
         public int ID { get; set; }
         public string Location { get; set; }
+        public RentalType  TypeOfRental { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
 
@@ -21,8 +23,17 @@ namespace OODMayExam2022
         //Methods
         public void IncreaseRentByPercentage(decimal amountToIncrease)
         {
+            //how make percentage???
             Price += amountToIncrease;
         }
+    }
+    //END OF RENTAL PROPERTY CLASS
+
+    public class RentalData : DbContext
+    {
+        public RentalData() : base("MyRentalData1234") { }
+
+        public DbSet<RentalProperty> Rentals { get; set; }
     }
 
 }
