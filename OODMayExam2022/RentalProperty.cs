@@ -30,7 +30,6 @@ namespace OODMayExam2022
         public override string ToString()
         {
             return Location;
-            return Price.ToString();
         }
     }
     //END OF RENTAL PROPERTY CLASS
