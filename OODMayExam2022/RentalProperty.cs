@@ -14,4 +14,9 @@ namespace OODMayExam2022
         public decimal Price { get; set; }
         public string Description { get; set; }
     }
+
+    public void IncreaseRentByPercentage()
+    {
+
+    }
 }
