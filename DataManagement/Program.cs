@@ -45,6 +45,18 @@ namespace DataManagement
                     "IT Sligo with regular buses to and from the campus",
                     Location = "Strandhill"
                 };
+
+                Console.WriteLine("Rental Properties have been created");
+
+                db.Rentals.Add(p1);
+                db.Rentals.Add(p2);
+                db.Rentals.Add(p3);
+
+                Console.WriteLine("Rentals added to the table");
+
+                db.SaveChanges();
+                Console.WriteLine("Data has been saved to the database, press ENTER to continue");
+                Console.ReadLine();
             }
         }
     }
