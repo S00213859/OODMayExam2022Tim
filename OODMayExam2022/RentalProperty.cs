@@ -8,7 +8,7 @@ namespace OODMayExam2022
 {
     //Enum
     public enum RentalType { House, Flat, Share}
-    class RentalProperty
+    public class RentalProperty
     {
         //Properties
         public int ID { get; set; }
