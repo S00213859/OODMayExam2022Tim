@@ -26,6 +26,11 @@ namespace OODMayExam2022
             //how make percentage???
             Price += amountToIncrease;
         }
+
+        public override string ToString()
+        {
+            return Location;
+        }
     }
     //END OF RENTAL PROPERTY CLASS
 
